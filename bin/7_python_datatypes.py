@@ -170,4 +170,24 @@ print("#" * 50)
 Course_list_2 = ["PDMA", "PDWA", "Py4Devops", "AWS","JS"]
 reserved_Course_list_2 = Course_list_2[:: -1]
 print("Reverse Course_list_1:", reserved_Course_list_2)
+
+# INT TO FLOAT
+Course_id_float = float(Course_id)
+print("Course_id_float:", Course_id_float, type(Course_id_float))
  
+# INT TO STR
+Course_id_str = str(Course_id)
+print("Course_id_str:", Course_id_str, type(Course_id_str))
+
+# INT TO BOOL
+Course_id_bool = bool(Course_id)
+print("Course_id_bool:", Course_id_bool, type(Course_id_bool))
+
+Course_id_4 = -1001
+Course_id_bool_1 = bool(Course_id_4)
+print("Course_id_bool_1:", Course_id_bool_1, type(Course_id_bool_1))
+print("#" * 50)
+
+#INT TO LIST
+Course_id_list = list(str(Course_id))
+print("Course_id_list:", Course_id_list, type(Course_id_list))
