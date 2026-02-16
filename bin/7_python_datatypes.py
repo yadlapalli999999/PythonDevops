@@ -191,3 +191,84 @@ print("#" * 50)
 #INT TO LIST
 Course_id_list = list(str(Course_id))
 print("Course_id_list:", Course_id_list, type(Course_id_list))
+
+print("#" * 50)
+# string formattings
+
+# f string
+Course_id_5 = 1001
+Course_name_str ="Py4Devops"
+
+print(f"Course ID is {Course_id_5} and Course name is {Course_name_str}")
+
+#format() method
+print("Course ID is {} and Course name is{}".format(Course_id_5, Course_name_str))
+
+# % operator 
+print("Course ID is %d and Course Name is %s" %(Course_id_5,Course_name_str))
+
+print("#" * 50)
+
+print(dir(Course_name_str))
+print("#" * 50)
+# calling string methods
+#object.method() # syntax
+
+print("Upper Case Course name str:", Course_name_str.upper())
+
+print("#" * 50)
+
+print("Lower Case Course name str:", Course_name_str.lower())
+print("#"*50)
+
+print("Title Case Course Name:", Course_name_str.title())
+print("#" * 50)
+
+print("Count of 'o' in Course Name:", Course_name_str.capitalize())
+print("#"*50)
+
+Course_name_Str = "  Py4Devops  "
+print("Original Course Name with spaces:", Course_name_Str.strip())
+print("Original Course Name with spaces:", Course_name_Str.strip('s '))
+
+print("#"*50)
+
+# split method
+print("Course name after split():", Course_name_str.split(sep='4'))
+Course_name2 = "Py4Devops:Python for Devops"
+print("Course name after split():",Course_name2.split(sep=':'))
+print("#"*50)
+
+#replace method
+print("Course name after replace():", Course_name2.replace('Devops','Development Operations'))
+print("#"*50)
+
+#join methods
+Course_list_join = ["PDMA", "PDWA","Py4Devops"]
+print("Course list after join()", ' | '.join(Course_list_join))
+print("Course list after join():", '-'.join(Course_list_join))
+print("#"*50)
+
+#starsWith and endwith()
+print("Course name startswith 'py':", Course_name2.startswith('Py'))
+print("Course name endwith 'ops':", Course_name2.endswith('ops'))
+print("#"*50)
+
+#find() and index()
+print("index of 'o' in Course name using find():", Course_name2.find('D',0,len(Course_name2)))
+print("index of 'D' in Course name Using index:", Course_name2.index('D',0,len(Course_name2)))
+print("# " * 50)
+
+#isalpha(), isdigit(), isalnum()
+Course_name= "Py4Devops"
+Course_id_str = "1001"
+print("Course name isalpha():", Course_name.isalpha())
+print("Course_id_str isdigit():", Course_id_str.isdigit())
+
+Course_name_alnum="Py4Devops1001"
+print("Course_name_alnum isalumn():", Course_name_alnum.isalnum())
+print("#"*50)
+
+#zfill()
+print("Course_id_str after zfill():", Course_id_str.zfill(8))
+print("#"*50)
